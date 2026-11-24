@@ -38,7 +38,7 @@ privacy-browser/
 │   │   ├── assets/
 │   │   │   ├── hosts.txt            <-- DDG Tracker Radar & EasyPrivacy blocklist
 │   │   │   └── entities.txt         <-- Entity mapping for 1st vs 3rd party rules
-│   │   ├── java/com/duck/privacy/browser/
+│   │   ├── java/app/frogwire/spectra/
 │   │   │   ├── MainActivity.kt      <-- Core Activity & Compose container
 │   │   │   ├── privacy/
 │   │   │   │   ├── AdBlocker.kt     <-- Native tracker blocker engine

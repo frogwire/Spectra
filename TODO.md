@@ -7,19 +7,22 @@ Snapshot from Nov 24, 2026. The live version, with status dropdowns and comments
 
 ### High
 - [x] **Build in Android Studio and fix compile errors** (Build): four rounds of changes haven't been compiled: UI, fonts, settings and dashboard, page shields.
-- [ ] **Put the project under git** (Build): no version control yet; the backups are a hand-made folder.
+- [x] **Put the project under git** (Build): no version control yet; the backups are a hand-made folder.
 - [ ] **Test the page shields on a real phone** (Privacy): browserleaks.com canvas, webrtc and webgl pages, each switch on and off.
-- [ ] **Rename the package from `com.duck.privacy.browser`** (Release): "duck" suggests DuckDuckGo; pick Spectra's own ID before any release.
+- [x] **Rename the package from `com.duck.privacy.browser`** (Release): now `app.frogwire.spectra`. Register frogwire.app before release.
 
 ### Medium
 - [ ] **Check offscreen canvas image export on a device** (Privacy): the convertToBlob path isn't covered by the Node test.
-- [ ] **Add the Space Grotesk and Inter font files** (Design): file names are in `app/src/main/assets/fonts/README.txt`; include both OFL licenses.
-- [ ] **Make the crystal elk app icon** (Design): the manifest still uses Android's stock compass icon.
-- [ ] **Add Kotlin unit tests** (Build): the README mentions testDebugUnitTest, but none exist. Start with SiteAllowlist and the URL helper.
+- [x] **Add the Space Grotesk and Inter font files** (Design): file names are in `app/src/main/assets/fonts/README.txt`; include both OFL licenses.
+- [x] **Make the crystal elk app icon** (Design): the manifest still uses Android's stock compass icon.
+- [ ] **Add Kotlin unit tests** (Build): 20 tests written in app/src/test/java; run them, then tick. Next: TrackingParamStripper (needs Robolectric).
 - [ ] **Add a licenses screen** (Release): font OFL texts, AndroidX and other third-party credits.
 - [ ] **Write `docs/privacy.md`** (Release): say what stays on the device: settings and tracker counts.
 - [ ] **Run a trademark search on "Spectra"** (Release): for software and browsers.
 - [ ] **Bring the project readme in line with the app** (Docs): the project readme describes a desktop ungoogled-Chromium build; the code is an Android WebView app.
+
+- [ ] **Downloads** (Browser): built Nov 24: asks first, system download manager for normal tabs, no-history path for Incognito+, Downloads sheet in Settings. Test on the phone.
+- [ ] **Bookmarks, with export and a home speed dial** (Browser): stored on the phone only; star in the address bar; top bookmarks become the home tiles; export/import as a standard bookmarks file.
 
 ### Low
 - [ ] **Add a WebRTC strict mode** (Privacy): in the spec: turns WebRTC off entirely.

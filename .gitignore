@@ -31,3 +31,9 @@ local.properties
 
 # OS
 .DS_Store
+/_to_delete/
+
+# Scratch folders (not part of the app)
+/_to_delete/
+/_ui-backup-2026-11-23/
+/Claude outputs/

@@ -1,15 +1,19 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
-    namespace = "com.duck.privacy.browser"
-    compileSdk = 35
+    namespace = "app.frogwire.spectra"
+    // Compose BOM 2026.11.01 requires API 37.1+
+    compileSdk {
+        version = release(37) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
-        applicationId = "com.duck.privacy.browser"
+        applicationId = "app.frogwire.spectra"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -40,10 +44,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-    }
-
     buildFeatures {
         compose = true
     }
@@ -61,4 +61,6 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.webkit)
+
+    testImplementation(libs.junit)
 }
