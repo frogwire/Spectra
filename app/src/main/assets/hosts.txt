@@ -1,0 +1,158 @@
+# Aura Privacy tracker blocklist. Auto-loaded by AdBlocker on startup.
+#
+# Syntax:
+#   example.com          block example.com and all its subdomains
+#   example.com/path     block only that path prefix on example.com (and subdomains)
+#   @@cdn.example.com    never block (overrides broader rules)
+#
+# Only third-party requests are blocked: a site's own domain and domains owned by the same
+# company (see entities.txt) are allowed. Deliberately NOT listed because blocking breaks
+# normal browsing: t.co (Twitter/X link redirects), app.link (app deep links),
+# graph.facebook.com (Facebook Login).
+
+# --- Google ---
+google-analytics.com
+googletagmanager.com
+googletagservices.com
+doubleclick.net
+googlesyndication.com
+googleadservices.com
+adservice.google.com
+adservice.google.ca
+adservice.google.co.uk
+adservice.google.de
+analytics.google.com
+google.com/pagead
+google.com/ads
+youtube.com/pagead
+youtube.com/api/stats/ads
+
+# --- Meta ---
+connect.facebook.net
+pixel.facebook.com
+an.facebook.com
+facebook.com/tr
+
+# --- Twitter / X ---
+ads.twitter.com
+analytics.twitter.com
+static.ads-twitter.com
+ads-api.twitter.com
+
+# --- Microsoft ---
+bat.bing.com
+c.bing.com
+clarity.ms
+px.ads.linkedin.com
+snap.licdn.com
+linkedin.com/px
+ads.linkedin.com
+
+# --- TikTok / Snap / Pinterest / Reddit ---
+analytics.tiktok.com
+ads.tiktok.com
+tr.snapchat.com
+sc-static.net/scevent.min.js
+ct.pinterest.com
+pinterest.com/ct
+alb.reddit.com
+events.redditmedia.com
+
+# --- Amazon ---
+amazon-adsystem.com
+
+# --- Yandex / Yahoo ---
+mc.yandex.ru
+mc.yandex.com
+yandex.ru/metrika
+gemini.yahoo.com
+analytics.yahoo.com
+sp.analytics.yahoo.com
+
+# --- Ad exchanges & networks ---
+adnxs.com
+criteo.com
+criteo.net
+rubiconproject.com
+pubmatic.com
+openx.net
+casalemedia.com
+casale-media.com
+indexexchange.com
+bidswitch.net
+sharethrough.com
+spotxchange.com
+sovrn.com
+lijit.com
+teads.tv
+tremorhub.com
+yieldmo.com
+media.net
+smartadserver.com
+adform.net
+adsrvr.org
+3lift.com
+moatads.com
+ad-delivery.net
+adroll.com
+popads.net
+propellerads.com
+mgid.com
+revcontent.com
+exoclick.com
+trafficjunky.com
+ero-advertising.com
+juicyads.com
+realsrv.com
+
+# --- Content recommendation ---
+taboola.com
+outbrain.com
+zemanta.com
+
+# --- Audience measurement ---
+scorecardresearch.com
+quantserve.com
+quantcount.com
+quantcast.com
+chartbeat.com
+chartbeat.net
+statcounter.com
+
+# --- Session replay & product analytics ---
+hotjar.com
+hotjar.io
+crazyegg.com
+fullstory.com
+mouseflow.com
+inspectlet.com
+luckyorange.com
+segment.io
+cdn.segment.com
+api.segment.com
+mixpanel.com
+amplitude.com
+heap.io
+heapanalytics.com
+optimizely.com
+vwo.com
+matomo.cloud
+
+# --- Mobile attribution ---
+branch.io
+appsflyer.com
+adjust.com
+kochava.com
+adcolony.com
+applovin.com
+inmobi.com
+flurry.com
+
+# --- Performance / error telemetry ---
+bam.nr-data.net
+js-agent.newrelic.com
+browser.sentry-cdn.com
+sessions.bugsnag.com
+ingest.sentry.io
+
+# --- Exceptions (@@) go here when a rule breaks a site ---

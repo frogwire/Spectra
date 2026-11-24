@@ -1,0 +1,18 @@
+# Company ownership groups.
+# A tracker owned by the same company as the page you're on is first-party (the company already
+# knows you're there), so it is not blocked. This prevents breaking e.g. Instagram, which loads
+# Facebook-owned resources.
+# Format: Entity Name: domain1 domain2 ...
+Facebook: facebook.com facebook.net fbcdn.net fbsbx.com instagram.com cdninstagram.com messenger.com whatsapp.com whatsapp.net meta.com
+Google: google.com googleapis.com gstatic.com googleusercontent.com youtube.com ytimg.com googlevideo.com google-analytics.com googletagmanager.com googletagservices.com doubleclick.net googlesyndication.com googleadservices.com blogger.com
+Microsoft: microsoft.com bing.com live.com office.com msn.com linkedin.com licdn.com clarity.ms azure.com
+Twitter: twitter.com x.com twimg.com ads-twitter.com t.co
+Amazon: amazon.com amazon-adsystem.com media-amazon.com ssl-images-amazon.com twitch.tv
+Yahoo: yahoo.com yimg.com aol.com
+Yandex: yandex.ru yandex.com yandex.net yastatic.net
+ByteDance: tiktok.com tiktokcdn.com byteoversea.com
+Snap: snapchat.com sc-static.net
+Pinterest: pinterest.com pinimg.com
+Taboola: taboola.com
+Outbrain: outbrain.com zemanta.com
+Criteo: criteo.com criteo.net

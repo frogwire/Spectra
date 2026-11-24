@@ -1,0 +1,33 @@
+# Build output
+/build/
+/app/build/
+/.gradle/
+/.kotlin/
+*.apk
+*.aab
+
+# Machine-specific (SDK path, signing)
+local.properties
+*.jks
+*.keystore
+
+# Android Studio: keep shared project settings, skip per-user state
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/usage.statistics.xml
+/.idea/shelf/
+/.idea/caches/
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/deploymentTargetDropDown.xml
+/.idea/deploymentTargetSelector.xml
+/.idea/androidTestResultsUserPreferences.xml
+/.idea/appInsightsSettings.xml
+/.idea/studiobot.xml
+/.idea/other.xml
+*.iml
+
+# OS
+.DS_Store
